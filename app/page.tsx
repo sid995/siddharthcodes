@@ -1,9 +1,9 @@
-'use client'
-
 import { AboutMe } from "@/components/AboutMe";
+import { GetInTouch } from "@/components/GetInTouch";
 import Header from "@/components/Header";
 import { MyName } from "@/components/MyName";
 import { SocialMedia } from "@/components/SocialMedia";
+import { WhereIHaveWorked } from "@/components/WhereIHaveWorked";
 
 export default async function Page() {
   return (
@@ -12,6 +12,8 @@ export default async function Page() {
       <MyName />
       <SocialMedia />
       <AboutMe />
+      {/* <WhereIHaveWorked /> */}
+      <GetInTouch />
     </div>
   )
 }

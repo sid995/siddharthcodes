@@ -27,7 +27,7 @@ export const MyName = () => {
         My interests lie in the Machine Learning space, and I am <span className="text-AAsecondary">actively</span> looking for <span className="text-AAsecondary">internships</span> in <span className="text-AAsecondary">Machine Learning or Software Engineering</span>.
       </h3>
       <div className="mt-12">
-        <a href={"#"} target={"_blank"} rel="noreferrer">
+        <a href="/resume.pdf" target={"_blank"} rel="noreferrer">
           <button className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary">
             Check out my resume!
           </button>

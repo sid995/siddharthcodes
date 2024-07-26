@@ -3,10 +3,13 @@
 import { motion } from "framer-motion";
 import DesktopMenu from "./DesktopMenu"
 import { useEffect, useRef, useState } from "react";
+import { MobileMenu } from "./MobileMenu";
+import { MobileHamburger } from "../icons/MobileHamburger";
 
 export default function Header() {
   const prevScrollY = useRef(0);
   const [showHeader, setShowHeader] = useState(true);
+  const [rotate, setRotate] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +30,7 @@ export default function Header() {
   return (
     <>
       {/* mobile header */}
+      <MobileMenu rotate={rotate} setRotate={setRotate} />
       <motion.header
         initial={{ y: 0 }}
         animate={{ y: showHeader ? 0 : -100 }}
@@ -37,6 +41,7 @@ export default function Header() {
         <div>
           <span className="text-gray-300 font-bold text-xl lg:text-3xl md:text-2xl">SK</span>
         </div>
+        <MobileHamburger rotate={rotate} setRotate={setRotate} />
         <DesktopMenu />
       </motion.header>
     </>
