@@ -19,7 +19,7 @@ export const MyName = () => {
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
         I&apos;m a <span className="text-AAsecondary">software engineer</span> with 5 years of experience,
-        currently pursuing a <span className="text-AAsecondary">master's degree in Computer Science at NJIT</span>.
+        currently pursuing a <span className="text-AAsecondary">masters degree in Computer Science at NJIT</span>.
         I possess strong problem-solving skills and specialize in crafting exceptional digital experiences.
         My expertise spans both <span className="text-AAsecondary">frontend</span> and <span className="text-AAsecondary">backend development</span>,
         with proficiency in <span className="text-AAsecondary">TypeScript, React, Next.js, TailwindCSS, Python, Go</span>, and <span className="text-AAsecondary">PostgreSQL</span>.
