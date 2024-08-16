@@ -1,29 +1,61 @@
-'use client'
+"use client";
 
 import { Link as ReactScrollLink } from "react-scroll";
 
 export default function DesktopMenu() {
   return (
     <div className="font-mono text-xs md:flex hidden flex-row items-center space-x-8 ">
-      <span className=" text-AAsecondary">
-        <ReactScrollLink to="aboutSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 01. <span className="text-white hover:cursor-pointer hover:text-AAsecondary duration-300">About</span>
+      <span className="text-AAsecondary">
+        <ReactScrollLink
+          to="aboutSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 01.{" "}
+          <span className="text-white hover:cursor-pointer hover:text-AAsecondary duration-300">
+            About
+          </span>
         </ReactScrollLink>
       </span>
-      {/* <span className=" text-AAsecondary">
+      {/* <span className="text-AAsecondary">
         <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
           &gt; 02.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Experience</span>
         </ReactScrollLink>
       </span>
-      <span className=" text-AAsecondary">
+      <span className="text-AAsecondary">
         <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
           &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Work</span>
         </ReactScrollLink>
       </span> */}
-      <span className=" text-AAsecondary">
-        <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 02. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Contact</span>
+      <span className="text-AAsecondary">
+        <ReactScrollLink
+          to="projectsSection"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={200}
+        >
+          &gt; 02.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Projects
+          </span>
+        </ReactScrollLink>
+      </span>
+      <span className="text-AAsecondary">
+        <ReactScrollLink
+          to="GetInTouchSection"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          &gt; 03.{" "}
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Contact
+          </span>
         </ReactScrollLink>
       </span>
       <span>
@@ -34,5 +66,5 @@ export default function DesktopMenu() {
         </a>
       </span>
     </div>
-  )
+  );
 }

@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import ArrowIcon from "../icons/ArrowIcon"
+import ArrowIcon from "../icons/ArrowIcon";
 
 export const GetInTouch = () => {
   return (
@@ -12,23 +12,35 @@ export const GetInTouch = () => {
       <div className="flex flex-row items-center">
         <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-AAsecondary" />
         <div className="flex flex-row space-x-2 items-center">
-          <span className="text-AAsecondary font-sans text-sm  sm:text-base"> 02.</span>
-          <span className=" font-sans text-AAsecondary text-base">What&apos;s Next?</span>
+          <span className="text-AAsecondary font-sans text-sm  sm:text-base">
+            {" "}
+            02.
+          </span>
+          <span className=" font-sans text-AAsecondary text-base">
+            What&apos;s Next?
+          </span>
         </div>
       </div>
-      <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">Get In Touch</span>
+      <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">
+        Get In Touch
+      </span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        I&apos;m currently looking for internship opportunity. If you&apos;d like to chat, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+        I&apos;m currently looking for internships and full-time opportunities.
+        If you&apos;d like to chat, my inbox is always open. Whether you have a
+        question or just want to say hi, I&apos;ll try my best to get back to
+        you!
       </p>
       <div className="pt-4">
-        <a href="mailto:siddharth.kundu95@gmail.com" target={"_blank"} rel="noreferrer">
-          <button
-            className="font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-[1.5px] rounded "
-          >
+        <a
+          href="mailto:siddharth.kundu95@gmail.com"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <button className="font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-[1.5px] rounded ">
             Say Hello
           </button>
         </a>
       </div>
     </div>
-  )
-}
+  );
+};

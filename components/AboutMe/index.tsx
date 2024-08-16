@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
 import Image from "next/image";
-import ArrowIcon from "../icons/ArrowIcon"
-import PersonalImage from "../../public/personal_image.jpg"
+import ArrowIcon from "../icons/ArrowIcon";
+import PersonalImage from "../../public/personal_image.jpg";
 
 const technologies = [
   ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Shadcn/ui", "Python", "Go"],
@@ -11,15 +11,26 @@ const technologies = [
 
 export const AboutMe = () => {
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
+    <div
+      id="aboutSection"
+      data-aos="fade-up"
+      className="snap-start flex flex-col  items-center py-20 bg-AAprimary"
+    >
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
         md:w-[700px] lg:w-[900px] "
       >
         <div className="flex flex-row items-center ">
           <div className="flex flex-row  items-center mr-4">
-            <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"} />
-            <span className="text-AAsecondary font-Header text-sm  sm:text-xl"> 01.</span>
+            <ArrowIcon
+              className={
+                "flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"
+              }
+            />
+            <span className="text-AAsecondary font-Header text-sm  sm:text-xl">
+              {" "}
+              01.
+            </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               About Me
             </span>
@@ -32,24 +43,39 @@ export const AboutMe = () => {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Hello! My name is Siddharth, and I am a passionate software engineer and problem solver,
-                dedicated to creating impactful code that thrives on the internet.
-                My journey in computer science began in 2017 when I delved into the world of Frontend Engineering.
-                Little did I know that programming skills would become essential in pursuing this interest, marking the start of my
-                programming journey.
+                Hello! My name is Siddharth, and I am a passionate software
+                engineer and problem solver, dedicated to creating impactful
+                code that thrives on the internet. My journey in software
+                engineering began in 2017 when I delved into the world of
+                Frontend Engineering. Little did I know that programming skills
+                would become essential in pursuing this interest, marking the
+                start of my programming journey.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Since pursuing my engineering degree, my career has taken me through diverse industries,
-                allowing me to refine my expertise in full-stack development, particularly in <span className="text-AAsecondary">JavaScript</span>,
-                <span className="text-AAsecondary">TypeScript</span>, <span className="text-AAsecondary">ReactJS</span>,
-                <span className="text-AAsecondary">NextJS</span>, and <span className="text-AAsecondary">Go</span>. I have a proven track record in leading teams to
-                deliver high-quality software solutions, enhancing user experience and system performance.
-                My professional experience includes working as a Senior Software Engineer at <span className="text-AAsecondary">Dotpe</span>,
-                where I led the creation of <span className="text-AAsecondary">Digital Showroom</span> contributing to the ecosystem and developed <span className="text-AAsecondary">DotDesign</span>, our robust
-                internal design system. I have also contributed to high-performance applications at
-                <span className="text-AAsecondary"> Acko</span>, <span className="text-AAsecondary">Honeybridge</span> and <span className="text-AAsecondary">Vinculum Solutions</span>, focusing on frontend development and performance optimization.
+                Since pursuing my engineering degree, my career has taken me
+                through diverse industries, allowing me to refine my expertise
+                in full-stack development, particularly in{" "}
+                <span className="text-AAsecondary">JavaScript</span>,
+                <span className="text-AAsecondary">TypeScript</span>,{" "}
+                <span className="text-AAsecondary">ReactJS</span>,{" "}
+                <span className="text-AAsecondary">NextJS</span>, and{" "}
+                <span className="text-AAsecondary">Go</span>. I have a proven
+                track record in leading teams to deliver high-quality software
+                solutions, enhancing user experience and system performance. My
+                professional experience includes working as a Senior Software
+                Engineer at <span className="text-AAsecondary">Dotpe</span>,
+                where I led the creation of{" "}
+                <span className="text-AAsecondary">Digital Showroom</span>{" "}
+                contributing to the ecommerce market and developed{" "}
+                <span className="text-AAsecondary">DotDesign</span>, our robust
+                internal design system. I have also contributed to
+                high-performance applications at
+                <span className="text-AAsecondary"> Acko</span>,{" "}
+                <span className="text-AAsecondary">Honeybridge</span> and{" "}
+                <span className="text-AAsecondary">Vinculum Solutions</span>,
+                focusing on frontend development and performance optimization.
               </span>
             </div>
             <div className="font-Header tracking-wide">
@@ -64,15 +90,20 @@ export const AboutMe = () => {
                     <div className="flex flex-col space-y-4 sm:text-base text-sm">
                       {tech.map((t) => {
                         return (
-                          <div key={t} className="flex flex-row items-center space-x-2">
+                          <div
+                            key={t}
+                            className="flex flex-row items-center space-x-2"
+                          >
                             <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                            <span className="text-gray-400 sm:text-sm text-xs">{t}</span>
+                            <span className="text-gray-400 sm:text-sm text-xs">
+                              {t}
+                            </span>
                           </div>
                         );
                       })}
                     </div>
                   </div>
-                )
+                );
               })}
               {/* <div className="flex flex-row space-x-2 items-center">
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
@@ -131,6 +162,6 @@ export const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div >
-  )
-}
+    </div>
+  );
+};

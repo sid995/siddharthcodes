@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 import { motion } from "framer-motion";
-import { Link as ReachScrollLink } from "react-scroll"
+import { Link as ReachScrollLink } from "react-scroll";
 
 export const MobileMenu = (props: any) => {
   const closeMenu = () => {
@@ -37,6 +37,25 @@ export const MobileMenu = (props: any) => {
              hover:text-AAsecondary hover:cursor-pointer duration-300"
           >
             About
+          </span>
+        </ReachScrollLink>
+        <ReachScrollLink
+          to="projectsSection"
+          spy={true}
+          smooth={true}
+          offset={10}
+          duration={200}
+          onClick={() => closeMenu()}
+          className="flex flex-col text-center space-y-2"
+        >
+          <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">
+            02.
+          </span>
+          <span
+            className="text-white font-Text2 text-sm sm:text-base
+            hover:text-AAsecondary hover:cursor-pointer duration-300"
+          >
+            Projects
           </span>
         </ReachScrollLink>
         {/* <ReachScrollLink
@@ -82,7 +101,7 @@ export const MobileMenu = (props: any) => {
           onClick={() => closeMenu()}
           className="flex flex-col text-center space-y-2"
         >
-          <span className="text-AAsecondary text-xs font-mono">02.</span>
+          <span className="text-AAsecondary text-xs font-mono">03.</span>
           <span
             className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
@@ -100,5 +119,5 @@ export const MobileMenu = (props: any) => {
         </a>
       </div>
     </motion.div>
-  )
-}
+  );
+};
