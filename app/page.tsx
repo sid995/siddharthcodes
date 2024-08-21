@@ -13,7 +13,7 @@ export default async function Page() {
       <MyName />
       <SocialMedia />
       <AboutMe />
-      {/* <WhereIHaveWorked /> */}
+      <WhereIHaveWorked />
       <Projects />
       <GetInTouch />
     </div>
