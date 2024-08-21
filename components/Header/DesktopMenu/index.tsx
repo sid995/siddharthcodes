@@ -19,17 +19,20 @@ export default function DesktopMenu() {
           </span>
         </ReactScrollLink>
       </span>
-      {/* <span className="text-AAsecondary">
-        <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
+      <span className="text-AAsecondary">
+        <ReactScrollLink
+          to="WhereIHaveWorked"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={200}
+        >
           &gt; 02.{" "}
-          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Experience</span>
+          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
+            Experience
+          </span>
         </ReactScrollLink>
       </span>
-      <span className="text-AAsecondary">
-        <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Work</span>
-        </ReactScrollLink>
-      </span> */}
       <span className="text-AAsecondary">
         <ReactScrollLink
           to="projectsSection"
@@ -38,7 +41,7 @@ export default function DesktopMenu() {
           offset={50}
           duration={200}
         >
-          &gt; 02.{" "}
+          &gt; 03.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
             Projects
           </span>
@@ -52,7 +55,7 @@ export default function DesktopMenu() {
           offset={-100}
           duration={200}
         >
-          &gt; 03.{" "}
+          &gt; 04.{" "}
           <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">
             Contact
           </span>

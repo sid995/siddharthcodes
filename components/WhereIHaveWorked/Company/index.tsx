@@ -1,6 +1,12 @@
 "use client";
 
-export const Company = ({ company }: any) => {
+import { CompanyButtonProps } from "..";
+
+export const Company = ({
+  company,
+}: {
+  company: CompanyButtonProps["company"];
+}) => {
   return (
     <div className="text-gray-300 font-sans">
       <h3 className="text-xl font-semibold">
@@ -21,7 +27,7 @@ export const Company = ({ company }: any) => {
           {company.tech.map((tech: string, index: number) => (
             <span
               key={index}
-              className="bg-AAprimary text-AAsecondary text-xs px-2 py-1 rounded"
+              className="bg-AAprimary text-AAsecondary px-2 py-1 rounded text-sm"
             >
               {tech}
             </span>

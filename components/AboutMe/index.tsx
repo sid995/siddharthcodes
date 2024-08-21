@@ -14,11 +14,11 @@ export const AboutMe = () => {
     <div
       id="aboutSection"
       data-aos="fade-up"
-      className="snap-start flex flex-col  items-center py-20 bg-AAprimary"
+      className="snap-start flex flex-col items-center py-20 bg-AAprimary"
     >
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
-        md:w-[700px] lg:w-[900px] "
+        md:w-[700px] lg:w-[900px]"
       >
         <div className="flex flex-row items-center ">
           <div className="flex flex-row  items-center mr-4">
@@ -31,16 +31,15 @@ export const AboutMe = () => {
               {" "}
               01.
             </span>
-            <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
+            <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-xl sm:text-2xl pl-4">
               About Me
             </span>
           </div>
-          <div className="bg-gray-400 h-[0.2px] w-full sm:w-72 ml-4"></div>
         </div>
         {/* // ? Paragraphs */}
 
         <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0  md:space-x-8 sm:space-x-2 ">
-          <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
+          <div className="w-full md:w-7/12 space-y-4 text-base">
             <div className="font-Header ">
               <span className="text-gray-400 ">
                 Hello! My name is Siddharth, and I am a passionate software
@@ -87,7 +86,7 @@ export const AboutMe = () => {
               {technologies.map((tech, i) => {
                 return (
                   <div className="flex flex-row space-x-2 items-center" key={i}>
-                    <div className="flex flex-col space-y-4 sm:text-base text-sm">
+                    <div className="flex flex-col space-y-4 text-base">
                       {tech.map((t) => {
                         return (
                           <div
@@ -95,9 +94,7 @@ export const AboutMe = () => {
                             className="flex flex-row items-center space-x-2"
                           >
                             <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                            <span className="text-gray-400 sm:text-sm text-xs">
-                              {t}
-                            </span>
+                            <span className="text-gray-400 text-base">{t}</span>
                           </div>
                         );
                       })}
@@ -105,30 +102,6 @@ export const AboutMe = () => {
                   </div>
                 );
               })}
-              {/* <div className="flex flex-row space-x-2 items-center">
-                <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                  {technologies[0].map((tech, index) => {
-                    return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
-                        <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="flex flex-row space-x-2 items-center">
-                <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                  {technologies[1].map((tech, index) => {
-                    return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
-                        <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div> */}
             </div>
           </div>
           {/* // ? Image in Desktop and Tablet */}
@@ -140,7 +113,6 @@ export const AboutMe = () => {
             ></div>
 
             <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
-              {/* <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div> */}
               <Image
                 src={PersonalImage}
                 className={"object-contain rounded-lg"}
@@ -148,8 +120,7 @@ export const AboutMe = () => {
               />
             </div>
           </div>
-          {/* // ?Image in Mobile */}
-          <div className="relative w-full h-48 md:hidden flex justify-center items-center">
+          <div className="pt-8 relative w-full h-48 md:hidden flex justify-center items-center">
             <div className="absolute w-48 h-full rounded translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
             <div className="absolute w-48 h-full rounded overflow-hidden">
               <Image

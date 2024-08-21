@@ -11,11 +11,11 @@ export default async function Page() {
     <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full">
       <Header />
       <MyName />
-      <SocialMedia />
       <AboutMe />
       <WhereIHaveWorked />
       <Projects />
       <GetInTouch />
+      <SocialMedia />
     </div>
   );
 }

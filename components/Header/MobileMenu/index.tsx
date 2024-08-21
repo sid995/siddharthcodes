@@ -40,7 +40,7 @@ export const MobileMenu = (props: any) => {
           </span>
         </ReachScrollLink>
         <ReachScrollLink
-          to="projectsSection"
+          to="WhereIHaveWorked"
           spy={true}
           smooth={true}
           offset={10}
@@ -50,6 +50,25 @@ export const MobileMenu = (props: any) => {
         >
           <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">
             02.
+          </span>
+          <span
+            className="text-white font-Text2 text-sm sm:text-base
+            hover:text-AAsecondary hover:cursor-pointer duration-300"
+          >
+            Experience
+          </span>
+        </ReachScrollLink>
+        <ReachScrollLink
+          to="projectsSection"
+          spy={true}
+          smooth={true}
+          offset={10}
+          duration={200}
+          onClick={() => closeMenu()}
+          className="flex flex-col text-center space-y-2"
+        >
+          <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">
+            03.
           </span>
           <span
             className="text-white font-Text2 text-sm sm:text-base
@@ -101,7 +120,7 @@ export const MobileMenu = (props: any) => {
           onClick={() => closeMenu()}
           className="flex flex-col text-center space-y-2"
         >
-          <span className="text-AAsecondary text-xs font-mono">03.</span>
+          <span className="text-AAsecondary text-xs font-mono">04.</span>
           <span
             className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"

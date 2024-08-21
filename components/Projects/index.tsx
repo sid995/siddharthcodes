@@ -90,7 +90,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       }`}
     >
       <div className={`w-full md:w-1/2 ${isEven ? "md:pl-8" : "md:pr-8"}`}>
-        <h3 className="text-2xl font-bold text-AAsecondary mb-4">
+        <h3 className="text-lg sm:text-2xl font-bold text-AAsecondary mb-4 flex items-center">
           {project.title}
           {project.link && (
             <a
@@ -108,7 +108,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           {project.technologies.map((tech, i) => (
             <span
               key={i}
-              className="bg-AAprimary text-AAsecondary px-3 py-1 rounded-full text-sm"
+              className="bg-AAprimary text-AAsecondary px-2 py-1 rounded-full text-sm"
             >
               {tech}
             </span>
@@ -120,9 +120,12 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           <Image
             src={project.image}
             alt={project.title}
-            layout="fill"
-            objectFit="contain"
+            fill={true}
+            sizes="100%"
             className="rounded-lg"
+            style={{
+              objectFit: "contain",
+            }}
           />
         </div>
       </div>
@@ -143,13 +146,12 @@ export const Projects = () => {
             <ArrowIcon className="flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary" />
             <span className="text-AAsecondary font-Header text-sm sm:text-xl">
               {" "}
-              02.
+              03.
             </span>
-            <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
+            <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-xl sm:text-2xl pl-4">
               My Projects
             </span>
           </div>
-          <div className="bg-gray-400 h-[0.2px] w-full sm:w-72 ml-4"></div>
         </div>
 
         <div className="w-full space-y-20">

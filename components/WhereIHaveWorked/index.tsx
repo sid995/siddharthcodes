@@ -129,51 +129,52 @@ export const WhereIHaveWorked = () => {
 
   return (
     <div
+      id="WhereIHaveWorked"
       data-aos="fade-up"
-      className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary"
+      className="snap-start flex flex-col items-center py-20 bg-AAprimary"
     >
-      <section className="flex flex-row items-center">
+      <div className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] md:w-[700px] lg:w-[900px]">
         <div className="flex flex-row items-center">
-          <ArrowIcon
-            className={"flex-none h-4 md:h-6 w-4 md:w-5 text-AAsecondary"}
-          />
-          <span className="text-AAsecondary font-sans text-sm sm:text-xl">
-            02.
-          </span>
+          <div className="flex flex-row items-center mr-4">
+            <ArrowIcon className="flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary" />
+            <span className="text-AAsecondary font-Header text-sm sm:text-xl">
+              {" "}
+              02.
+            </span>
+            <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-xl sm:text-2xl pl-4">
+              Where I Have Worked
+            </span>
+          </div>
         </div>
-        <span className="text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
-          Where I've Worked
-        </span>
-        <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
-      </section>
 
-      <section className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 justify-center md:justify-center items-start max-w-screen-lg w-full">
-        <div className="md:w-1/4 flex flex-row">
-          <div className="hidden md:block bg-gray-500 relative h-auto w-0.5 rounded mr-2">
-            <motion.div
-              animate={{ y: barPosition }}
-              className="absolute w-0.5 h-12 rounded bg-AAsecondary"
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            ></motion.div>
+        <section className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 justify-center md:justify-center items-start max-w-screen-lg w-full">
+          <div className="w-full md:w-1/4 flex flex-row">
+            <div className="hidden md:block bg-gray-500 relative h-auto w-0.5 rounded mr-2">
+              <motion.div
+                animate={{ y: barPosition }}
+                className="absolute w-0.5 h-12 rounded bg-AAsecondary"
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              ></motion.div>
+            </div>
+            <div className="w-full flex flex-row md:flex-col space-x-2 md:space-x-0 md:space-y-1 overflow-x-auto md:overflow-x-hidden pb-4 md:pb-0 snap-x">
+              {CompanyList.map((company, index) => (
+                <CompanyButton
+                  key={company.companyName}
+                  ref={(el) => {
+                    buttonRefs.current[index] = el;
+                  }}
+                  company={company}
+                  isActive={activeCompany.companyName === company.companyName}
+                  onClick={() => setActiveCompany(company)}
+                />
+              ))}
+            </div>
           </div>
-          <div className="flex flex-col space-y-1">
-            {CompanyList.map((company, index) => (
-              <CompanyButton
-                key={company.companyName}
-                ref={(el) => {
-                  buttonRefs.current[index] = el;
-                }}
-                company={company}
-                isActive={activeCompany.companyName === company.companyName}
-                onClick={() => setActiveCompany(company)}
-              />
-            ))}
+          <div className="w-full md:w-3/4">
+            <Company company={activeCompany} />
           </div>
-        </div>
-        <div className="md:w-3/4">
-          <Company company={activeCompany} />
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 };
