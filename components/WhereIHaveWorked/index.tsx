@@ -14,12 +14,15 @@ const CompanyList = [
     endTime: "February 2023",
     href: "https://www.dotpe.in/",
     tasks: [
-      "Founding Engineer of Digital Showroom team.",
-      "Directed a cross-functional team of 8 engineers to develop ecosystem of cross-platform apps, resulting in a 35% increase in customer acquisition and a 28% boost in ecommerce market presence within 6 months.",
-      "Spearheaded the creation of DotDesign, an internal design system, which reduced development time by 25% and decreased UI-related bugs by 40% across projects.",
-      "Developed 20 dynamic and reusable widgets using Storybook and ChakraUI, resulting in a 40% increase in pro-tier client satisfaction through personalized website creation options.",
-      "Orchestrated sprint planning and execution, resulting in 95% successful delivery of features and timely resolution of 95% software issues, boosting development efficiency by 30% through agile methodologies.",
-      "Successfully managed the migration from Redux to React Query for state management. This transition reduced boilerplate code by 30% and improved application performance by 20%.",
+      "Founding Engineer of Digital Showroom team",
+      "Led Digital Showroom development with Next.js/TypeScript, handling 20K+ concurrent requests",
+      "Built AdPro AI analytics dashboard, achieving 40% ROI increase for SMBs",
+      "Created scalable UI platform with high-conversion onboarding and SEO optimization",
+      "Established shared design system (Dot Design UI) across three cross-functional teams",
+      "Delivered features across React Web and React Native mobile platforms",
+      "Optimized Go backend systems, reducing server costs by 50% (~$300K annual savings)",
+      "Built microservices with gRPC and Kafka for real-time order tracking",
+      "Maintained 95% test coverage using Jest, React Testing Library, and Cypress",
     ],
     tech: [
       "Javascript",
@@ -44,9 +47,9 @@ const CompanyList = [
     endTime: "February 2021",
     href: "https://www.acko.com/",
     tasks: [
-      "Spearheaded the development of a high-performance NextJS web application, scaling to support 100,000 monthly active users.",
-      "Reduced integration-related defects by 40% through proactive communication and knowledge sharing.",
-      "Collaborated with backend engineers to achieve a 30% reduction in API response times, leading to an 80% improvement in overall application performance.",
+      "Enhanced React/NextJS portals, reducing page-load times by 60%",
+      "Achieved 99% regression-test pass rate through cross-browser testing",
+      "Built inline addon bundling UI with 25% attach rate and 20% drop-off reduction",
     ],
     tech: [
       "Javascript",
@@ -65,9 +68,8 @@ const CompanyList = [
     endTime: "July 2020",
     href: "https://www.honeybridge.com/",
     tasks: [
-      "Implemented and deployed a modern tech stack including Javascript, NextJS, Redux, SCSS, and Tailwind, resulting in a 40% improvement in development efficiency and a 30% reduction in time-to-market for new features.",
-      "Engineered a responsive and feature-rich user interface that increased user satisfaction ratings by 45% and reduced customer support tickets related to UI issues by 60%.",
-      "Implemented automated testing strategies that increased test coverage from 70% to 95%, reducing regression issues by 80% and improving overall software reliability by 40%.",
+      "Developed live video streaming platform using React, GatsbyJS, and WebRTC for 1000+ users",
+      "Built Python/Flask backend utilities for metadata and video stream management",
     ],
     tech: [
       "Javascript",
@@ -86,10 +88,11 @@ const CompanyList = [
     endTime: "February 2020",
     href: "https://www.vinculumgroup.com/",
     tasks: [
-      "Elevated software performance by adjusting parameters and integrating new features, resulting in a 20% increase in system capabilities.",
-      "Designed and deployed a high-conversion web application, resulting in a 70% increase in customer conversion rates within 2 months.",
+      "Engineered React/TypeScript interfaces for eRetail modules (Order, Inventory, Catalog Management)",
+      "Built Seller Panel dashboard with Java REST API integration for real-time data sync",
+      "Achieved 20% boost in user satisfaction through performance optimizations",
     ],
-    tech: ["HTML", "CSS", "Javascript", "Bootstrap", "jQuery"],
+    tech: ["Javascript", "Typescript", "React", "Java"],
   },
 ];
 

@@ -17,13 +17,47 @@ interface ProjectCardProps {
 
 const projects = [
   {
+    title: "Music Generator",
+    description:
+      "Full stack AI based Music generator, generating music in real time on given genre and lyrics. Allows users to publish and download generated music",
+    technologies: [
+      "React",
+      "Nextjs",
+      "TailwindCSS",
+      "BetterAuth",
+      "Python",
+      "LangChain",
+      "FastAPI",
+      "NeonDB",
+      "Modal",
+    ],
+    image: "/screenshots/music-generator.png",
+    link: "https://music-generator-brown.vercel.app/",
+  },
+  {
+    title: "Audio Classifier",
+    description:
+      "Full stack system for classifying audio real time using Pytorch and Deep Learning",
+    technologies: [
+      "Next.js",
+      "BetterAuth",
+      "Python",
+      "Pytorch",
+      "Modal",
+      "NeonDB",
+      "Qwen",
+    ],
+    image: "/screenshots/audio-classifier.png",
+    link: "https://github.com/sid995/AudioClassifier",
+  },
+  {
     title: "SmartShelf",
     description:
       "AI powered app to handle inventory management and recipe generation",
     technologies: [
       "Next.js",
       "Tailwind CSS",
-      "Sharcn/ui",
+      "Shadcn/ui",
       "Firebase Firestore",
       "Firebase Storage",
       "Firebase Auth",
@@ -47,36 +81,6 @@ const projects = [
     ],
     image: "/screenshots/chattermind.png",
     link: "https://chattermind.vercel.app/",
-  },
-  {
-    title: "Stellar Classifier",
-    description:
-      "ML models for classifying stars, quasars and galaxies using various redshifts, ultraviolet emmissions and other parameters.",
-    technologies: [
-      "Python",
-      "Scikit-learn",
-      "Numpy",
-      "Matplotlib",
-      "Astropy",
-      "Seaborn",
-    ],
-    image: "/screenshots/cosmic-classifier.png",
-    link: "https://colab.research.google.com/drive/11RduME2YuggWWQ_EAOJsjVZ6njUDwLpP#scrollTo=fdoIf97YMBw8",
-  },
-  {
-    title: "Surredo",
-    description:
-      "Thread clone for social media. Users can create, read, update and delete posts.",
-    technologies: [
-      "NextJS",
-      "TailwindCSS",
-      "Shadcn",
-      "Prisma",
-      "MongoDB",
-      "NextAuth",
-    ],
-    image: "/screenshots/surredo.png",
-    link: "https://surredo.vercel.app/",
   },
 ];
 

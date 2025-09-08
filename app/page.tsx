@@ -1,6 +1,7 @@
 import { AboutMe } from "@/components/AboutMe";
 import { GetInTouch } from "@/components/GetInTouch";
 import Header from "@/components/Header";
+import { MoreProjects } from "@/components/MoreProjects";
 import { MyName } from "@/components/MyName";
 import Projects from "@/components/Projects";
 import { SocialMedia } from "@/components/SocialMedia";
@@ -14,6 +15,7 @@ export default async function Page() {
       <AboutMe />
       <WhereIHaveWorked />
       <Projects />
+      <MoreProjects />
       <GetInTouch />
       <SocialMedia />
     </div>

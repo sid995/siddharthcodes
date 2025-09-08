@@ -6,7 +6,7 @@ import PersonalImage from "../../public/personal_image.jpg";
 
 const technologies = [
   ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Shadcn/ui", "Python", "Go"],
-  ["Node.js", "TypeScript", "Django", "Fiber", "Docker", "PostgreSQL"],
+  ["Node.js", "TypeScript", "FastAPI", "Gin", "Docker", "PostgreSQL"],
 ];
 
 export const AboutMe = () => {
@@ -42,39 +42,37 @@ export const AboutMe = () => {
           <div className="w-full md:w-7/12 space-y-4 text-base">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Hello! My name is Siddharth, and I am a passionate software
-                engineer and problem solver, dedicated to creating impactful
-                code that thrives on the internet. My journey in software
-                engineering began in 2017 when I delved into the world of
-                Frontend Engineering. Little did I know that programming skills
-                would become essential in pursuing this interest, marking the
-                start of my programming journey.
-              </span>
-            </div>
-            <div className="font-Header ">
-              <span className="text-gray-400 ">
-                Since pursuing my engineering degree, my career has taken me
-                through diverse industries, allowing me to refine my expertise
-                in full-stack development, particularly in{" "}
-                <span className="text-AAsecondary">JavaScript</span>,
-                <span className="text-AAsecondary">TypeScript</span>,{" "}
-                <span className="text-AAsecondary">ReactJS</span>,{" "}
-                <span className="text-AAsecondary">NextJS</span>, and{" "}
-                <span className="text-AAsecondary">Go</span>. I have a proven
-                track record in leading teams to deliver high-quality software
-                solutions, enhancing user experience and system performance. My
-                professional experience includes working as a Senior Software
-                Engineer at <span className="text-AAsecondary">Dotpe</span>,
-                where I led the creation of{" "}
-                <span className="text-AAsecondary">Digital Showroom</span>{" "}
-                contributing to the ecommerce market and developed{" "}
-                <span className="text-AAsecondary">DotDesign</span>, our robust
-                internal design system. I have also contributed to
-                high-performance applications at
-                <span className="text-AAsecondary"> Acko</span>,{" "}
-                <span className="text-AAsecondary">Honeybridge</span> and{" "}
-                <span className="text-AAsecondary">Vinculum Solutions</span>,
-                focusing on frontend development and performance optimization.
+                Hello! I'm Siddharth, a passionate software engineer dedicated
+                to creating impactful digital experiences. My journey began in
+                2017 with frontend development, which sparked a deep love for
+                crafting code that makes a difference.
+                <br />
+                Over my career, I've specialized in full-stack development with{" "}
+                <span className="text-AAsecondary">
+                  JavaScript, TypeScript, React, Next.js,
+                </span>{" "}
+                and <span className="text-AAsecondary">Go</span>, working across
+                diverse industries to deliver high-quality solutions that
+                enhance user experience and system performance. As a{" "}
+                <span className="text-AAsecondary">
+                  Senior Software Engineer at Dotpe
+                </span>
+                , I led the creation of{" "}
+                <span className="text-AAsecondary">
+                  Digital Showroom for the ecommerce market
+                </span>{" "}
+                and{" "}
+                <span className="text-AAsecondary">developed DotDesign</span>,
+                our comprehensive internal design system. I've also contributed
+                to high-performance applications at Acko, Honeybridge, and
+                Vinculum Solutions, consistently focusing on{" "}
+                <span className="text-AAsecondary">
+                  frontend excellence and performance optimization
+                </span>
+                .
+                <br />I thrive on solving complex problems and leading teams to
+                build software that not only works beautifully but drives real
+                business impact.
               </span>
             </div>
             <div className="font-Header tracking-wide">
@@ -106,13 +104,7 @@ export const AboutMe = () => {
           </div>
           {/* // ? Image in Desktop and Tablet */}
           <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">
-            <div
-              className="group-hover:translate-x-3 group-hover:translate-y-3
-               duration-300 absolute w-5/6 h-5/6 border-2 border-AAsecondary translate-x-5 
-               translate-y-5 rounded"
-            ></div>
-
-            <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
+            <div className="absolute w-5/6 h-5/6 rounded overflow-hidden flex justify-center items-center">
               <Image
                 src={PersonalImage}
                 className={"object-contain rounded-lg"}
@@ -121,15 +113,13 @@ export const AboutMe = () => {
             </div>
           </div>
           <div className="pt-8 relative w-full h-48 md:hidden flex justify-center items-center">
-            <div className="absolute w-48 h-full rounded translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
-            <div className="absolute w-48 h-full rounded overflow-hidden">
+            <div className="absolute w-72 h-full rounded overflow-hidden">
               <Image
                 src={PersonalImage}
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
             </div>
-            <div className="absolute w-48 h-full  bg-AAsecondary opacity-10 md:opacity-60  rounded overflow-hidden"></div>
           </div>
         </div>
       </div>

@@ -25,10 +25,9 @@ export const GetInTouch = () => {
         Get In Touch
       </span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        I&apos;m currently looking for internships and full-time opportunities.
-        If you&apos;d like to chat, my inbox is always open. Whether you have a
-        question or just want to say hi, I&apos;ll try my best to get back to
-        you!
+        I&apos;m currently looking for full-time opportunities. If you&apos;d
+        like to chat, my inbox is always open. Whether you have a question or
+        just want to say hi, I&apos;ll try my best to get back to you!
       </p>
       <div className="pt-4">
         <a
