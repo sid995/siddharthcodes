@@ -10,9 +10,9 @@ export const GetInTouch = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.1
-      }
-    }
+        delayChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -22,9 +22,9 @@ export const GetInTouch = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const buttonVariants = {
@@ -34,12 +34,12 @@ export const GetInTouch = () => {
       borderColor: "rgba(100, 255, 218, 0.8)",
       transition: {
         duration: 0.2,
-        ease: "easeInOut"
-      }
+        ease: "easeInOut",
+      },
     },
     tap: {
-      scale: 0.95
-    }
+      scale: 0.95,
+    },
   };
 
   return (
@@ -55,14 +55,14 @@ export const GetInTouch = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-AAsecondary/5 rounded-full blur-3xl"
-          animate={{ 
+          animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3]
+            opacity: [0.3, 0.5, 0.3],
           }}
-          transition={{ 
+          transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
         {/* Floating particles */}
@@ -70,44 +70,44 @@ export const GetInTouch = () => {
           className="absolute top-20 left-1/4 w-2 h-2 bg-AAsecondary rounded-full opacity-40"
           animate={{
             y: [0, -15, 0],
-            opacity: [0.4, 0.8, 0.4]
+            opacity: [0.4, 0.8, 0.4],
           }}
           transition={{
             duration: 4,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
         <motion.div
           className="absolute bottom-20 right-1/4 w-1.5 h-1.5 bg-AAsecondary rounded-full opacity-30"
           animate={{
             y: [0, 10, 0],
-            opacity: [0.3, 0.7, 0.3]
+            opacity: [0.3, 0.7, 0.3],
           }}
           transition={{
             duration: 5,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1
+            delay: 1,
           }}
         />
       </div>
 
-      <motion.div className="flex flex-row items-center relative z-10" variants={itemVariants}>
-        <motion.div
-          whileHover={{ rotate: 180 }}
-          transition={{ duration: 0.3 }}
-        >
+      <motion.div
+        className="flex flex-row items-center relative z-10"
+        variants={itemVariants}
+      >
+        <motion.div whileHover={{ rotate: 180 }} transition={{ duration: 0.3 }}>
           <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-AAsecondary mr-2" />
         </motion.div>
         <div className="flex flex-row space-x-2 items-center">
-          <motion.span 
+          <motion.span
             className="text-AAsecondary font-sans text-sm sm:text-base"
             whileHover={{ scale: 1.05 }}
           >
             04.
           </motion.span>
-          <motion.span 
+          <motion.span
             className="text-sm sm:text-base font-sans text-AAsecondary"
             whileHover={{ scale: 1.05 }}
           >
@@ -115,23 +115,23 @@ export const GetInTouch = () => {
           </motion.span>
         </div>
       </motion.div>
-      
+
       <motion.div variants={itemVariants} className="relative">
-        <motion.span 
+        <motion.span
           className="text-gray-200 text-xl md:text-3xl sm:text-4xl font-bold tracking-wider block text-center relative"
           whileHover={{ scale: 1.02 }}
         >
           Get In Touch
           <motion.div
-            className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-AAsecondary"
+            className="absolute -bottom-2 transform -translate-x-1/2 w-[8.1rem] md:w-[12.2rem] h-0.5 bg-AAsecondary"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
           />
         </motion.span>
       </motion.div>
-      
-      <motion.p 
+
+      <motion.p
         className="flex font-Header tracking-wide text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px] leading-relaxed"
         variants={itemVariants}
       >
@@ -145,37 +145,35 @@ export const GetInTouch = () => {
           just want to say hi, I&apos;ll try my best to get back to you!
         </motion.span>
       </motion.p>
-      
+
       <motion.div className="pt-6" variants={itemVariants}>
         <a
           href="mailto:siddharth.kundu95@gmail.com"
           target={"_blank"}
           rel="noreferrer"
         >
-          <motion.button 
+          <motion.button
             className="relative font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-[1.5px] rounded-sm overflow-hidden group bg-transparent"
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
           >
-            <motion.div
-              className="absolute inset-0 bg-AAsecondary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"
-            />
+            <motion.div className="absolute inset-0 bg-AAsecondary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out" />
             <span className="relative z-10 group-hover:text-AAprimary transition-colors duration-300 font-semibold">
               Say Hello 👋
             </span>
-            
+
             {/* Button shine effect */}
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full"
               animate={{
-                translateX: ['-100%', '100%']
+                translateX: ["-100%", "100%"],
               }}
               transition={{
                 duration: 2,
                 repeat: Infinity,
                 repeatDelay: 3,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             />
           </motion.button>
