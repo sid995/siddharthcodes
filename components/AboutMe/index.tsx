@@ -251,7 +251,7 @@ export const AboutMe = () => {
               variants={itemVariants}
             >
               <span className="text-gray-400 text-base leading-7">
-                Hello! I'm{" "}
+                Hello! I&apos;m{" "}
                 <span className="text-AAsecondary font-semibold">
                   Siddharth
                 </span>
@@ -261,7 +261,8 @@ export const AboutMe = () => {
                 makes a difference.
                 <br />
                 <br />
-                Over my career, I've specialized in full-stack development with{" "}
+                Over my career, I&apos;ve specialized in full-stack development
+                with{" "}
                 <span className="text-AAsecondary font-medium">
                   JavaScript, TypeScript, React, Next.js,
                 </span>{" "}
