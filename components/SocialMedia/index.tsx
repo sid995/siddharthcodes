@@ -85,18 +85,28 @@ const IconClickableWithAnimation = (props: { Icon: any; href: string }) => {
   return (
     <motion.div
       whileHover={{
-        y: -3,
-        transition: { duration: 0.1 },
+        y: -5,
+        scale: 1.1,
+        transition: { duration: 0.2, ease: "easeOut" },
       }}
-      className=""
+      whileTap={{ scale: 0.9 }}
+      className="relative group"
     >
       <a href={props.href} className="" target={"_blank"} rel="noreferrer">
+        <motion.div
+          className="absolute inset-0 bg-AAsecondary/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"
+        />
         <props.Icon
           className={
-            "w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer"
+            "w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer relative z-10 transition-colors duration-300"
           }
         />
       </a>
+      
+      {/* Glow effect */}
+      <motion.div
+        className="absolute inset-0 bg-AAsecondary/20 rounded-full blur-md scale-0 group-hover:scale-150 transition-all duration-500"
+      />
     </motion.div>
   );
 };
