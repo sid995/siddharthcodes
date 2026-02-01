@@ -33,6 +33,13 @@ const config: Config = {
         MobileNavBarColor: "#112340",
         StartupBackground: "#020c1b",
       },
+      boxShadow: {
+        "glow-sm": "0 0 20px rgba(100, 255, 218, 0.15)",
+        glow: "0 0 30px rgba(100, 255, 218, 0.2)",
+        "glow-md": "0 0 40px rgba(100, 255, 218, 0.25)",
+        "glow-lg": "0 0 60px rgba(100, 255, 218, 0.3)",
+        "inner-glow": "inset 0 0 20px rgba(100, 255, 218, 0.05)",
+      },
       screens: {
         sm: "640px",
         // => @media (min-width: 640px) { ... }

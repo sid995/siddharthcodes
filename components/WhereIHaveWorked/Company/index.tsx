@@ -45,7 +45,7 @@ export const Company = ({
 
   return (
     <motion.div
-      className="text-gray-300 font-sans"
+      className="text-gray-300 font-sans rounded-xl p-6 md:p-8 bg-AAtertiary/20 border border-AAsecondary/10 shadow-inner-glow"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

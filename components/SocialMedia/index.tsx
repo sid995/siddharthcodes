@@ -35,7 +35,7 @@ export const SocialMedia = ({
               href={"https://www.linkedin.com/in/siddharthkundu"}
             />
           </div>
-          <div className="h-28 w-0.5 bg-gray-400"></div>
+          <div className="h-28 w-0.5 rounded-full bg-gradient-to-b from-AAsecondary/50 via-gray-500 to-transparent"></div>
         </div>
       </motion.div>
 
@@ -74,7 +74,7 @@ export const SocialMedia = ({
             </a>
           </motion.div>
 
-          <div className="h-24 w-0.5 bg-gray-400"></div>
+          <div className="h-24 w-0.5 rounded-full bg-gradient-to-b from-AAsecondary/50 via-gray-500 to-transparent"></div>
         </div>
       </motion.div>
     </>

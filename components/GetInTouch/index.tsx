@@ -123,7 +123,7 @@ export const GetInTouch = () => {
         >
           Get In Touch
           <motion.div
-            className="absolute -bottom-2 transform -translate-x-1/2 w-[8.1rem] md:w-[12.2rem] h-0.5 bg-AAsecondary"
+            className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[8.1rem] md:w-[12.2rem] h-0.5 bg-AAsecondary rounded-full shadow-[0_0_12px_rgba(100,255,218,0.5)]"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ delay: 0.8, duration: 0.6 }}
@@ -153,7 +153,7 @@ export const GetInTouch = () => {
           rel="noreferrer"
         >
           <motion.button
-            className="relative font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-[1.5px] rounded-sm overflow-hidden group bg-transparent"
+            className="relative font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-2 rounded-lg overflow-hidden group bg-transparent shadow-glow-sm hover:shadow-glow transition-shadow duration-300"
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"

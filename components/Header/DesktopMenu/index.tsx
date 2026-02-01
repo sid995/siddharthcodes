@@ -63,7 +63,7 @@ export default function DesktopMenu() {
       </span>
       <span>
         <a href="/resume.pdf" target={"_blank"} rel="noreferrer">
-          <button className="text-AAsecondary border border-spacing-2 py-2 px-3 rounded-sm border-AAsecondary hover:bg-ResumeButtonHover">
+          <button className="text-AAsecondary border border-AAsecondary py-2 px-4 rounded-lg hover:bg-ResumeButtonHover hover:shadow-glow-sm transition-all duration-200">
             Resume
           </button>
         </a>

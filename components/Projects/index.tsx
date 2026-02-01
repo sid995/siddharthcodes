@@ -218,15 +218,15 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         variants={imageVariants}
       >
         <motion.div 
-          className="relative w-full h-64 md:h-80 group/image overflow-hidden rounded-xl"
+          className="relative w-full h-64 md:h-80 group/image overflow-hidden rounded-xl border border-AAsecondary/10 shadow-glow-sm group-hover/image:shadow-glow group-hover/image:border-AAsecondary/40 transition-all duration-300"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="absolute inset-0 bg-gradient-to-t from-AAprimary/20 to-transparent z-10 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"
+            className="absolute inset-0 bg-gradient-to-t from-AAprimary/30 to-transparent z-10 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"
           />
           <motion.div
-            className="absolute inset-0 border-2 border-transparent group-hover/image:border-AAsecondary/30 rounded-xl transition-all duration-300"
+            className="absolute inset-0 rounded-xl ring-2 ring-transparent group-hover/image:ring-AAsecondary/30 transition-all duration-300 pointer-events-none"
           />
           <Image
             src={project.image}

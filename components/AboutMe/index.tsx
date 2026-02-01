@@ -148,7 +148,7 @@ const TechnologyBadge = ({
       onMouseLeave={() => setIsHovered(false)}
       whileHover={{ scale: 1.05 }}
     >
-      <div className="flex flex-row items-center space-x-2 p-3 rounded-lg bg-AAtertiary/30 border border-transparent hover:border-AAsecondary/30 transition-all duration-300">
+      <div className="flex flex-row items-center space-x-2 p-3 rounded-lg bg-AAtertiary/30 border border-AAsecondary/10 hover:border-AAsecondary/40 hover:shadow-glow-sm transition-all duration-300">
         <ArrowIcon className="h-3 w-3 text-AAsecondary flex-shrink-0" />
         <span className="text-gray-300 text-sm font-medium group-hover:text-AAsecondary transition-colors duration-300">
           {tech.name}
@@ -296,41 +296,38 @@ export const AboutMe = () => {
               variants={itemVariants}
             >
               <span className="text-gray-400 text-base leading-7">
-                Hello! I&apos;m{" "}
+                I&apos;m{" "}
                 <span className="text-AAsecondary font-semibold">
                   Siddharth
                 </span>
-                , a passionate software engineer dedicated to creating impactful
-                digital experiences. My journey began in 2017 with frontend
-                development, which sparked a deep love for crafting code that
-                makes a difference.
+                , a senior fullstack engineer who ships AI native products and
+                distributed systems that scale. I don&apos;t just write code; I
+                own outcomes: platforms serving{" "}
+                <span className="text-AAsecondary font-medium">millions of users</span>
+                , sub-50ms P99 microservices, and production RAG pipelines that
+                move the needle on match quality, latency, and revenue.
                 <br />
                 <br />
-                Over my career, I&apos;ve specialized in full-stack development
-                with{" "}
-                <span className="text-AAsecondary font-medium">
-                  JavaScript, TypeScript, React, Next.js,
-                </span>{" "}
-                and <span className="text-AAsecondary font-medium">Go</span>,
-                working across diverse industries to deliver high-quality
-                solutions that enhance user experience and system performance.
-                As a{" "}
-                <span className="text-AAsecondary font-medium">
-                  Senior Software Engineer at Dotpe
-                </span>
-                , I led the creation of{" "}
-                <span className="text-AAsecondary font-medium">
-                  Digital Showroom for the ecommerce market
-                </span>{" "}
-                and{" "}
-                <span className="text-AAsecondary font-medium">
-                  developed DotDesign
-                </span>
-                , our comprehensive internal design system.
+                At{" "}
+                <span className="text-AAsecondary font-medium">SeekLab</span>, I
+                architected our RAG system from the ground up, improving candidate
+                match quality <span className="text-AAsecondary font-medium">35%</span> and
+                time-to-hire <span className="text-AAsecondary font-medium">40%</span>, 
+                scaled PostgreSQL to 10K+ concurrent lookups with 99.9% uptime, and
+                drove full-stack delivery across 15+ features while cutting
+                production incidents <span className="text-AAsecondary font-medium">25%</span>.
+                Before that, at{" "}
+                <span className="text-AAsecondary font-medium">DotPe</span>, I led
+                0 to 1 for <span className="text-AAsecondary font-medium">AdPro</span>,
+                an AI analytics platform for 500K+ SMBs, delivering{" "}
+                <span className="text-AAsecondary font-medium">$5M+ in measurable value</span>{" "}
+                and 40% better merchant ROI.
                 <br />
-                <br />I thrive on solving complex problems and leading teams to
-                build software that not only works beautifully but drives real
-                business impact.
+                <br />
+                I bring end-to-end ownership, strong technical judgment, and a
+                track record of improving latency, reliability, and business
+                results. If you&apos;re looking for someone who can ship, scale,
+                and lead, I&apos;m your engineer.
               </span>
             </motion.div>
 

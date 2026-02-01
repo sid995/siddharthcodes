@@ -13,18 +13,27 @@
   html {
     scroll-behavior: smooth;
   }
+
+  ::selection {
+    background-color: rgba(100, 255, 218, 0.25);
+    color: #e5e7eb;
+  }
 }
 
 @layer utilities {
   body::-webkit-scrollbar {
-    width: 0.4em;
+    width: 0.5em;
     background-color: #0b192f;
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #4c5474;
+    background: linear-gradient(180deg, #112340 0%, #4c5474 50%, #64ffda40 100%);
+    border-radius: 9999px;
     scrollbar-gutter: stable;
-    border-radius: 40px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #153040 0%, #64ffda60 100%);
   }
 }
 
@@ -34,6 +43,14 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: #0b192f;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(100, 255, 218, 0.06), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(100, 255, 218, 0.04), transparent),
+    radial-gradient(ellipse 60% 40% at 0% 80%, rgba(100, 255, 218, 0.04), transparent);
 }
 
 a {

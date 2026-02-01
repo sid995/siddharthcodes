@@ -146,7 +146,7 @@ export const MyName = () => {
         className="font-bold text-3xl lg:text-5xl sm:text-5xl md:text-6xl mt-4 leading-tight"
         variants={itemVariants}
       >
-        <span className="bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-gray-400 via-AAsecondary/90 to-gray-400 bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(100,255,218,0.15)]">
           Building the future, one project at a time.
         </span>
       </motion.h2>
@@ -168,7 +168,7 @@ export const MyName = () => {
       <motion.div className="mt-12" variants={itemVariants}>
         <a href="/resume.pdf" target={"_blank"} rel="noreferrer">
           <motion.button
-            className="relative bg-transparent text-AAsecondary border-2 rounded-sm px-6 sm:px-10 py-4 sm:py-5 border-AAsecondary font-mono text-sm sm:text-base overflow-hidden group"
+            className="relative bg-transparent text-AAsecondary border-2 rounded-lg px-6 sm:px-10 py-4 sm:py-5 border-AAsecondary font-mono text-sm sm:text-base overflow-hidden group shadow-glow-sm hover:shadow-glow transition-shadow duration-300"
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
@@ -191,7 +191,7 @@ export const MyName = () => {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-0.5 h-16 bg-gradient-to-b from-AAsecondary to-transparent"
+          className="w-0.5 h-16 rounded-full bg-gradient-to-b from-AAsecondary via-AAsecondary/60 to-transparent shadow-[0_0_12px_rgba(100,255,218,0.4)]"
         />
       </motion.div>
     </motion.div>
