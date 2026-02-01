@@ -8,79 +8,124 @@ import ArrowIcon from "../icons/ArrowIcon";
 
 const technologies = [
   {
-    name: "JavaScript (ES6+)",
-    category: "Language",
-    proficiency: 100,
-    projects: 15,
-  },
-  {
     name: "TypeScript",
     category: "Language",
-    proficiency: 92,
-    projects: 14,
+    proficiency: 95,
+    projects: 16,
   },
   {
-    name: "React",
-    category: "Frontend",
-    proficiency: 100,
-    projects: 12,
-  },
-  {
-    name: "Next.js",
-    category: "Frontend",
-    proficiency: 100,
-    projects: 8,
+    name: "JavaScript",
+    category: "Language",
+    proficiency: 95,
+    projects: 16,
   },
   {
     name: "Python",
     category: "Language",
-    proficiency: 87,
+    proficiency: 88,
     projects: 10,
   },
-  {
-    name: "FastAPI",
-    category: "Backend",
-    proficiency: 83,
-    projects: 5,
-  },
-
   {
     name: "Go",
     category: "Language",
     proficiency: 85,
     projects: 7,
   },
-
+  {
+    name: "React",
+    category: "Frontend",
+    proficiency: 95,
+    projects: 14,
+  },
+  {
+    name: "Next.js",
+    category: "Frontend",
+    proficiency: 92,
+    projects: 12,
+  },
+  {
+    name: "Node.js",
+    category: "Backend & Systems",
+    proficiency: 92,
+    projects: 13,
+  },
+  {
+    name: "FastAPI",
+    category: "Backend & Systems",
+    proficiency: 85,
+    projects: 6,
+  },
   {
     name: "Gin",
-    category: "Backend",
+    category: "Backend & Systems",
+    proficiency: 82,
+    projects: 5,
+  },
+  {
+    name: "gRPC",
+    category: "Backend & Systems",
     proficiency: 80,
     projects: 4,
   },
-
   {
-    name: "Node.js",
-    category: "Backend",
-    proficiency: 88,
+    name: "PostgreSQL",
+    category: "Data & Infra",
+    proficiency: 90,
     projects: 11,
   },
   {
-    name: "Docker",
-    category: "DevOps",
+    name: "Redis",
+    category: "Data & Infra",
     proficiency: 85,
-    projects: 9,
-  },
-  {
-    name: "PostgreSQL",
-    category: "Database",
-    proficiency: 87,
     projects: 8,
   },
   {
-    name: "Supabase",
-    category: "Backend",
+    name: "Prisma",
+    category: "Data & Infra",
+    proficiency: 88,
+    projects: 7,
+  },
+  {
+    name: "Kafka",
+    category: "Data & Infra",
+    proficiency: 80,
+    projects: 5,
+  },
+  {
+    name: "LangChain",
+    category: "AI/LLM Production",
     proficiency: 85,
+    projects: 6,
+  },
+  {
+    name: "OpenAI",
+    category: "AI/LLM Production",
+    proficiency: 88,
+    projects: 7,
+  },
+  {
+    name: "Pinecone",
+    category: "AI/LLM Production",
+    proficiency: 82,
     projects: 4,
+  },
+  {
+    name: "AWS",
+    category: "Cloud",
+    proficiency: 85,
+    projects: 10,
+  },
+  {
+    name: "Kubernetes",
+    category: "Cloud",
+    proficiency: 80,
+    projects: 5,
+  },
+  {
+    name: "Docker",
+    category: "Cloud",
+    proficiency: 88,
+    projects: 11,
   },
 ];
 
@@ -299,7 +344,7 @@ export const AboutMe = () => {
             </motion.div>
 
             <motion.div
-              className="grid grid-cols-2 gap-3"
+              className="grid grid-cols-2 md:grid-cols-4 gap-3"
               variants={itemVariants}
             >
               {technologies.map((tech, index) => (
